@@ -1,0 +1,11 @@
+.movieList {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 1rem;
+}
+
+.preloader {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
