@@ -7,23 +7,24 @@ function Movie(props) {
     Type: type,
   } = props;
   
-  return (
-    <div id={id} className="row">
-    <div className="col s12 m7">
+  return ( 
+  <div id={id} className="row">
+    <div className="col">
       <div className="card">
         <div className="card-image">
-          <img loading="lazy" src={poster} alt='img'/>
-          <span className="card-title">{title}</span>
+          <img loading="lazy" src={poster} alt='img' />
+
         </div>
         <div className="card-content">
+        <span className="card-title">{title}</span>
           <p>{year}</p>
-        </div>
-        <div className="card-action">
-          <a href="!#">{type}</a>
+          <p>{type}</p>
         </div>
       </div>
     </div>
   </div>
+  
+
   )
 }
 export {Movie}
