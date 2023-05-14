@@ -39,7 +39,7 @@ class Search extends React.Component {
                         onKeyDown={this.handleKey}
                     />
                     <input
-                        className='btn'
+                        className='btn red darken-4' 
                         type='button'
                         value='search'
                         // onClick={this.handleClickBtn}
