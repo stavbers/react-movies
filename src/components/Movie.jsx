@@ -1,3 +1,4 @@
+import {Blank} from './Blank.jsx'
 function Movie(props) {
   const {
     Title: title,
@@ -6,14 +7,15 @@ function Movie(props) {
     Poster: poster,
     Type: type,
   } = props;
-  
+
   return ( 
   <div id={id} className="row">
     <div className="col">
       <div className="card">
         <div className="card-image">
-          <img loading="lazy" src={poster} alt='img' />
-
+        {poster === 'N/A' 
+        ? <Blank/>
+        : <img loading="lazy" src={poster} alt='img' />}
         </div>
         <div className="card-content">
         <span className="card-title">{title}</span>
