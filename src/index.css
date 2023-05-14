@@ -21,3 +21,7 @@ code {
   top: 50%;
   left: 50%;
 }
+
+label:not(:last-child) {
+  margin-right: 2rem;
+}

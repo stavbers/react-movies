@@ -3,7 +3,8 @@ function Movie(props) {
     Title: title,
     Year: year,
     imdbID: id,
-    Poster: poster
+    Poster: poster,
+    Type: type,
   } = props;
   
   return (
@@ -11,14 +12,14 @@ function Movie(props) {
     <div className="col s12 m7">
       <div className="card">
         <div className="card-image">
-          <img loading="lazy" src={poster} />
+          <img loading="lazy" src={poster} alt='img'/>
           <span className="card-title">{title}</span>
         </div>
         <div className="card-content">
           <p>{year}</p>
         </div>
         <div className="card-action">
-          <a href="!#">This is a link</a>
+          <a href="!#">{type}</a>
         </div>
       </div>
     </div>
