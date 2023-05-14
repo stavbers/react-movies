@@ -1,15 +1,16 @@
-import '../preloader.css'
 
 function Preloader(){
-  return <div className="preloader">
-            <div className="cssload-thecube">
-              <div className="cssload-cube cssload-c1"></div>
-              <div className="cssload-cube cssload-c2"></div>
-              <div className="cssload-cube cssload-c4"></div>
-              <div className="cssload-cube cssload-c3"></div>
-            </div>
-         </div>
-  
+  return <div className="preloader-wrapper active">
+  <div className="spinner-layer spinner-red-only">
+    <div className="circle-clipper left">
+      <div className="circle"></div>
+    </div><div className="gap-patch">
+      <div className="circle"></div>
+    </div><div className="circle-clipper right">
+      <div className="circle"></div>
+    </div>
+  </div>
+</div>
 
 }
 

@@ -15,3 +15,9 @@ code {
 .content {
   min-height: calc(100vh - 64px - 70px);
 }
+
+.preloader-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
