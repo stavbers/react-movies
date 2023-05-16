@@ -1,7 +1,7 @@
 import React from 'react';
 import { MovieList } from '../components/MovieList';
 import { Preloader } from '../components/Preloader';
-import { Search } from '../components/Search';
+import { Search } from '../components/Search2';
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 class Main extends React.Component {
